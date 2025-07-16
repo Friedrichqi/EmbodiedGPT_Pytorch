@@ -885,7 +885,7 @@ class HuskyQFormerFlashAttention2(HuskyQFormerMultiHeadAttention):
             query_layer, key_layer, value_layer, causal=False
         )
 
-        context_layer = attn_output.reshape(bsz, tgt_len, self.embed_size).contiguous()
+        context_layer = attn_output.reshape(bsz, tgt_len, embed_dim).contiguous()
         outputs = (context_layer,)
 
         outputs = outputs + (past_key_value,)

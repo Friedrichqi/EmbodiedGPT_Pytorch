@@ -360,7 +360,7 @@ class Chat:
         return outputs
 
 if __name__ == '__main__':
-    model_path = “your path”
+    model_path = "model/Embodied_family_7b"
     device = "cuda" if torch.cuda.is_available() else "cpu"
     chat = Chat(model_path, device=device, num_gpus=1, max_new_tokens=2048, load_8bit=False)
 

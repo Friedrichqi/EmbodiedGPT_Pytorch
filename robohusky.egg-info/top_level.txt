@@ -1,0 +1,7 @@
+EgoCOT_clear
+assest
+datasets
+demo
+model
+robohusky
+train_files
